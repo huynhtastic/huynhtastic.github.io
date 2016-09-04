@@ -1,0 +1,25 @@
+body {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+.ss-text {
+	font-family: sans-serif;
+	/*font-weight: 400;*/
+	color: #F8BBD0;
+}
+
+.text-super {
+	font-size: 60px;
+	font-weight: 100;
+}
+
+.thick-border {
+	border-width: 3px;
+	border-color: #F44336;
+}
+
+.reg-lato {
+	font-weight: 400;
+	font-size: 20px;
+}
