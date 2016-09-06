@@ -2,7 +2,6 @@ body {
 	font-family: 'Lato', sans-serif;
 	color: white;
 	font-weight: 300;
-	margin-bottom: 50px;
 	background-image: url("../img/setup_compr.jpg");
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
@@ -12,6 +11,10 @@ body {
 }
 
 @media only screen and (max-width: 991px) {
+	.sm-text-center {
+		text-align: center;
+	}
+
 	.sm-center-block {
 		display: block;
 		margin-left: auto;
@@ -21,7 +24,13 @@ body {
 
 /* Multi-use */
 .full-screen {
-    height: 100vh;
+	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+	min-height: 100vh;
+	min-width: 100vh;
+}
+
+.full-padding {
+	padding: 5px;
 }
 
 .remove-side-padding {
@@ -37,8 +46,12 @@ body {
 	padding-right: 0;
 }
 
+.remove-margin-bottom {
+	margin-bottom: 0;
+}
+
 .med-alpha-bg {
-	background-color: rgba(46, 46, 46, 0.7);
+	background-color: rgba(46, 46, 46, 0.5);
 }
 
 .full-alpha-bg {
@@ -69,7 +82,7 @@ body {
 
 .text-intro {
 	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-	min-height: 100vh; /* These two lines are counted as one :-)       */
+	min-height: 100vh;
 	font-size: 25px;
 	display: flex;
 	align-items: center;
